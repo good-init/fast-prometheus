@@ -8,15 +8,15 @@ You can also add your own metrics if needed.
 
 Golden signals includes:  
 * **Latency**  
-Request processing time
+Request processing time (request_duration_seconds)  
 * **Traffic**  
-Total number of requests
+Total number of requests (requests_total)  
 * **Errors**  
-Total number of errors
+Total number of errors (errors_total)  
 * **Saturation**  
-Number of active requests  
-CPU load in percent.  
-Memory load in percent  
+Number of active requests (active_requests_total)  
+CPU load in percent. (cpu_percent)  
+Memory load in percent (memory_percent)  
 
 ### Quickstart
 1. Install Fast-Prometheus
