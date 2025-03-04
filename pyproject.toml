@@ -1,6 +1,6 @@
 [project]
 name = "fast-prometheus"
-version = "0.1.0"
+version = "0.1.1"
 description = "Prometheus metrics for projects on starlette, fastapi"
 readme = "README.md"
 authors = [
