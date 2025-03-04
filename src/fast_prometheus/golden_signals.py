@@ -41,7 +41,7 @@ class ErrorRequestsTotal(Executor):
         self.counted = True
 
     def after_execute(self, data: AfterData) -> None:
-        if not self.counted and (data.status_code == 422 or data.status_code >= 500):
+        if not self.counted and data.status_code >= 500:
             self.metric.labels(data.method, data.path, data.status_code).inc()
         self.counted = False
 
